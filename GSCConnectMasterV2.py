@@ -34,7 +34,7 @@ num_days = 5                    # Number of Days, Months to Extract
 #creds = 'client_secrets.json'   # Credential file from GSC
 #creds = '/content/GSCTatieLouCredentials.json'
 
-creds = 'JSON_keys\GSCTatieLouCredentialsNonLegacy.json'
+creds = 'GSCTatieLouCredentialsNonLegacy.json'
 #creds = '/content/GSCTatieLouCredentialsNonLegacy02.json'
 output = 'gsc_data.csv'
 
