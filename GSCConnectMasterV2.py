@@ -8,18 +8,7 @@ st.title("#1 TEST with  Josh's Code")
 import pandas as pd
 import datetime
 from datetime import date, timedelta
-import httplib2
-from googleapiclient.discovery import build
-from oauth2client.client import OAuth2WebServerFlow
-from collections import defaultdict
-from dateutil import relativedelta
-import argparse
-from oauth2client import client
-from oauth2client import file
-from oauth2client import tools
-import re
 import os
-from urllib.parse import urlparse
  
 #site = 'https://www.yoursite.com'    # Property to extract
 
