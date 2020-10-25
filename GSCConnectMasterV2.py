@@ -62,10 +62,10 @@ from pathlib import Path
 my_file = Path("credentials.json")
 
 if my_file.is_file():
-    account = searchconsole.authenticate(client_config='JSON_keys\GSCTatieLouCredentialsNonLegacy.json',credentials='credentials.json')
+    account = searchconsole.authenticate(client_config='GSCTatieLouCredentialsNonLegacy.json',credentials='credentials.json')
     st.write('Yes, credentials.json exists')
 else:
-    account = searchconsole.authenticate(client_config='JSON_keys\GSCTatieLouCredentialsNonLegacy.json',serialize='credentials.json')
+    account = searchconsole.authenticate(client_config='GSCTatieLouCredentialsNonLegacy.json',serialize='credentials.json')
     st.write('No, credentials.json doesnt exist')
     # file exists
 
