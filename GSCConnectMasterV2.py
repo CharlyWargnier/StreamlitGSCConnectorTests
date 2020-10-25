@@ -49,7 +49,7 @@ if st.button('Proceed to Oauth'):
         df = pd.DataFrame(report.rows)
         st.write(df)
     else:
-        account = searchconsole.authenticate(client_config='GSCTatieLouCredentialsNonLegacy.json',serialize='credentials.json')
+        account = searchconsole.authenticate(client_config=JsonFromString,serialize='credentials.json')
         st.write('No, credentials.json doesnt exist')
 
 try:
