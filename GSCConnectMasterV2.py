@@ -1,15 +1,31 @@
 import asyncio
 import streamlit as st
-
-
+import searchconsole
+import pandas as pd
+import os
 
 st.title("#1 TEST with  Josh's Code")
 
-import pandas as pd
-import datetime
-from datetime import date, timedelta
-import os
- 
+
+#from httpx_oauth.clients.google import GoogleOAuth2
+#
+#from httpx_oauth.oauth2 import OAuth2
+
+
+#import datetime
+#from datetime import date, timedelta
+#import httplib2
+#from googleapiclient.discovery import build
+#from oauth2client.client import OAuth2WebServerFlow
+#from collections import defaultdict
+#from dateutil import relativedelta
+#import argparse
+#from oauth2client import client
+#from oauth2client import file
+#from oauth2client import tools
+#import re
+#from urllib.parse import urlparse
+# 
 #site = 'https://www.yoursite.com'    # Property to extract
 
 site = 'https://www.tatielou.co.uk/'    # Property to extract
@@ -22,8 +38,6 @@ creds = 'JSON_keys\GSCTatieLouCredentialsNonLegacy.json'
 #creds = '/content/GSCTatieLouCredentialsNonLegacy02.json'
 output = 'gsc_data.csv'
 
-
-import searchconsole
 
 #import json
 #x =  '{ "name":"John", "age":30, "city":"New York"}'
