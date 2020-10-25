@@ -2,4 +2,4 @@ asyncio
 streamlit
 pandas
 os
-searchconsole
+git+https://github.com/joshcarty/google-searchconsole
