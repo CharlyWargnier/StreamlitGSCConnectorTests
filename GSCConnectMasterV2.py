@@ -116,7 +116,7 @@ else:
     #Synode's code ###############
     outputStdout = st.empty()
     with st_stdout(outputStdout.info):
-        account = searchconsole.authenticate(client_config=JsonFromString,serialize='credentials.json')
+        account = searchconsole.authenticate(client_config=JsonFromString,serialize='credentials.json', flow="console")
         #searchconsole.authenticate(client_config="GSCTatieLouCredentials.json", serialize='credentials.json', flow="console")
     #st.write('No, credentials.json doesnt exist')
 
