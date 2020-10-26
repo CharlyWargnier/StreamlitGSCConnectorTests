@@ -1,3 +1,5 @@
+import asyncio
+
 import streamlit as st
 import searchconsole
 import pandas as pd
@@ -114,9 +116,28 @@ else:
     #Synode's code ###############
     outputStdout = st.empty()
     with st_stdout(outputStdout.info):
-        account = searchconsole.authenticate(client_config=JsonFromString,serialize='credentials.json', flow="console")
+        account = searchconsole.authenticate(client_config=JsonFromString,serialize='credentials.json')
         #searchconsole.authenticate(client_config="GSCTatieLouCredentials.json", serialize='credentials.json', flow="console")
     #st.write('No, credentials.json doesnt exist')
+
+
+if account:
+    code = st.text_input("Authorization code")
+else:
+    code = None
+    "Waiting client configuration..."
+
+"## Access token"
+
+async def write_access_token(code):
+    token = await account.get_access_token(code, redirect_uri)
+    st.write(token)
+
+if code:
+    asyncio.run(write_access_token(code))
+    st.write(type(code))
+else:
+    "Waiting authorization code..."
 
 
 try:
@@ -129,4 +150,8 @@ except FileNotFoundError:
 
 st.checkbox("checkboxTest")
 st.stop()
+
+
+
+
 
