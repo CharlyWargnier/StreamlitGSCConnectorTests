@@ -8,7 +8,7 @@ import json
 import pandas as pd
 #from io import StringIO
 
-###########################################
+#Synode's code ###########################################
 
 from contextlib import contextmanager
 from io import StringIO
@@ -73,8 +73,6 @@ if __name__ == "__main__":
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
 st.title("Connect to GSC via Josh Carty code")
-st.header("Try JC's former code - it may work")
-st.write("https://github.com/jcchouinard/GoogleSearchConsole-Tutorial")
 
 uploaded_file = st.file_uploader("Choose a file")
 
